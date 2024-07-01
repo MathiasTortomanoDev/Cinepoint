@@ -1,0 +1,75 @@
+
+@font-face {
+    font-family: 'M_PLUS_1';
+    src: url('../fonts/M_PLUS_1/MPLUS1-VariableFont_wght.ttf') format('truetype');
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    transition: background 0.2s ease;
+    z-index: 200;
+}
+
+.header-active {
+    background: var(--primary-mode-color);
+}
+
+.header__nav {
+    width: 100%;
+    max-width: 1080px;
+    padding: 4px 10px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 22px;
+}
+
+.header__nav-item {
+    list-style: none;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    font-size: 18px;    
+    font-family: 'M_PLUS_1';
+    font-weight: 600;
+    height: 50px;
+    color: var(--primary-text-color);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__nav-logo {
+    width: 50px;
+}
+
+.header__nav__icons-list {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-icon {
+    background: var(--secondary-mode-color);
+    border-radius: 50%;
+    width: 40px;
+}
+
+.header__nav-nameUser {
+    font-size: 18px;
+    font-family: 'M_PLUS_1';
+    font-weight: 600;
+}

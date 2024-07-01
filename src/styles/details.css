@@ -1,0 +1,106 @@
+
+
+.details__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: "M_PLUS_1";
+    padding: 20px 0;
+}
+
+.details__title {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--primary-text-color);
+}
+
+.details__acting__list__container {
+    position: relative;
+}
+
+.details__acting__list__container::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 350px;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.8));
+    pointer-events: none;
+}
+
+.details__acting__list {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.details__actor__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.details__actor__img {
+    width: 100px;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    object-fit: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    filter: brightness(0.8);
+    outline: none;
+}
+
+.details__actor__name {
+    color: var(--third-text-color);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+}
+
+.details__list__arrowRight {
+    position: absolute;
+    right: 30px;
+    top: 30%;
+    z-index: 100;
+}
+
+.details__financialAnalysis {
+    display: flex;
+    color: var(--primary-text-color);
+    gap: 50px;
+    align-items: center;
+}
+
+.details__financialAnalysis__subcontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.details__financialAnalysis__title {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.details__financialAnalysis__money {
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.details__financialAnalysis__line {
+    height: 60%;
+    width: 2px;
+    background: var(--fourth-text-color);
+}
